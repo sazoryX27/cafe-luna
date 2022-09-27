@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+.input-de-nombre {
+    position: relative;
+    display: inline-block;
+}
+.input-para-el-nombre{
+    border-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input-label{
+    background-color: white;
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.input-de-pago {
+    position: relative;
+    display: inline-block;
+}
+.input-numero-de-tarjeta{
+    border-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input-label-tarjeta{
+    background-color: white;
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.input-de-CCV {
+    position: relative;
+    display: inline-block;
+}
+.input-para-el-CCV{
+    border-color: crimson;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input-label-CCV{
+    background-color: white;
+    color: crimson;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
