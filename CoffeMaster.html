@@ -1,98 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Café Luna's</title>
-    <link rel="stylesheet" href="StyleCoffeMaster.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/> 
-</head>
-<body class="bg-neutral-300 font-sans p-0 m-0">
-    <header class="flex bg-[#442c1c] justify-center items-center h-24 ">
-        <h1 class="flex text-white font-['open_sans'] font-bold text-xl">
+    <link rel="stylesheet" href="StyleCoffeMaster.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-neutral-300 font-sans p-0 m-0">
+    <header class="flex bg-[#442c1c] justify-center items-center h-24">
+      <h1 class="flex text-white font-['open_sans'] font-bold text-xl">
         <img
-        class="h-7 px-2"
-        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
-        alt="logo-café-luna's"
+          class="h-7 px-2"
+          src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+          alt="logo-café-luna's"
         />
         Café Luna's
-        </h1>
+      </h1>
     </header>
-    <div class="grid grid-cols-2 w-full p-5 gap-8"> <!--Zona de la orden-->
-        <section class="bg-[#EEE1D5] rounded-[12px] p-3 border-4 border-red-900 shadow-xl">
-            <h2 class="uppercase text-black text-xl font-bold p-0 m-0 pb-3">Items</h2>
-            <ul class="items">
-                <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
-                    <div class="text-black">1x</div>
-                    <div class="text-blacks">Gallo pinto</div>
-                    <div class="text-black">50 C$</div>
-                </li>
-            </ul>
-            <ul class="border-b-2 border-red-900 pb-3">
-                <li class="text-black translate-x-12">Cuajada</li>
-                <li class="text-black translate-x-12">Crema</li>
-                <li class="text-black translate-x-12">Huevo frito</li>
-            </ul>
-            <ul class="items">
-                <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
-                    <div class="text-black">1x</div>
-                    <div class="text-black">Güirila</div>
-                    <div class="text-black">30 C$</div>
-                </li>
-            </ul>
-            <ul class="border-b-2 border-red-900 pb-3">
-                <li class="text-black translate-x-12">Cuajada</li>
-                <li class="text-black translate-x-12">Crema</li>
-            </ul>
-            <ul class="items">
-                <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
-                    <div class="text-black">2x</div>
-                    <div class="text-black">Café</div>
-                    <div class="text-black">20 C$</div>
-                </li>
-            </ul>
-            <ul class="items-complementarios">
-                <li class="text-black translate-x-12">Pan recien horneado</li>
-            </ul>
-        </section>
-        <section class="grid content-center space-y-4 shadow-xl"> <!--Zona de nombre de la orden-->
-            <div class="grid content-center p-3 bg-[#EEE1D5] h-32 rounded-[12px] border-4 border-red-900">
-                <h2 class="mb-3 uppercase text-xl font-bold">Nombre de la orden</h2>
-                <div class="input-de-nombre">
-                    <label for="nombre-de-la-orden" class="input-label bg-[#EEE1D5]">Nombre para la orden</label>
-                    <input id="nombre-de-la-orden" class="input-para-el-nombre border-2 bg-[#EEE1D5] w-[600px]" placeholder="Escribir acá"/> 
-                </div>
-            </div>
-            <div class="grid content-evenly p-3 bg-[#EEE1D5] h-64 rounded-[12px] border-4 border-red-900">
-                <h2 class="mb-3 uppercase text-xl font-bold ">Método de pago</h2> <!--Método de pago-->
-                <div class="input-de-pago mb-3">
-                    <label for="numero-de-la-tarjeta" class="input-label-tarjeta bg-[#EEE1D5]">Número de la tarjeta</label>
-                    <input id="numero-de-la-tarjeta" class="input-numero-de-tarjeta border-2 bg-[#EEE1D5] w-[600px]" placeholder="Escribir acá"/>
-                </div>
-                <div class="input-de-CCV">
-                    <label for="numero-de-CCV" class="input-label-CCV bg-[#EEE1D5]">CCV</label>
-                    <input id="numero-de-CCV" class="input-para-el-CCV border-2 bg-[#EEE1D5]" placeholder="Escribir acá"/>
-                </div>
-            </div>
-        </section>
-        <section class="bg-neutral-300 col-span-2">
-            <div class="flex justify-evenly pb-3">
-            <div class="flex flex-col">
-                <div>Subtotal:</div>
-                <div>Tax:</div>
-                <div>Total:</div>
-            </div>
-            <div class="flex flex-col">
-                <div>100 C$</div>
-                <div>20 C$</div>
-                <div>120 C$</div>
-            </div>
-            </div>
-            <button class="bg-[#EEE1D5] border border-[#EEE1D5] hover:border-red-900 shadow-xl bg-[#EEE1D5] h-8 col-span-2 rounded-[12px] w-full
-            font-bold" type="button">Presione acá para ordenar</button>
-        </section>
+    <div class="grid grid-cols-2 w-full p-5 gap-8">
+      <!--Zona de la orden-->
+      <section
+        class="bg-[#EEE1D5] rounded-[12px] p-3 border-4 border-red-900 shadow-xl"
+      >
+        <h2 class="uppercase text-black text-xl font-bold p-0 m-0 pb-3">
+          Items
+        </h2>
+        <ul class="items">
+          <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
+            <div class="text-black">1x</div>
+            <div class="text-blacks">Gallo pinto</div>
+            <div class="text-black">50 C$</div>
+          </li>
+        </ul>
+        <ul class="border-b-2 border-red-900 pb-3">
+          <li class="text-black translate-x-12">Cuajada</li>
+          <li class="text-black translate-x-12">Crema</li>
+          <li class="text-black translate-x-12">Huevo frito</li>
+        </ul>
+        <ul class="items">
+          <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
+            <div class="text-black">1x</div>
+            <div class="text-black">Güirila</div>
+            <div class="text-black">30 C$</div>
+          </li>
+        </ul>
+        <ul class="border-b-2 border-red-900 pb-3">
+          <li class="text-black translate-x-12">Cuajada</li>
+          <li class="text-black translate-x-12">Crema</li>
+        </ul>
+        <ul class="items">
+          <li class="grid grid-cols-[1.2fr_80%_2fr] font-semibold">
+            <div class="text-black">2x</div>
+            <div class="text-black">Café</div>
+            <div class="text-black">20 C$</div>
+          </li>
+        </ul>
+        <ul class="items-complementarios">
+          <li class="text-black translate-x-12">Pan recien horneado</li>
+        </ul>
+      </section>
+      <section class="grid content-center space-y-4 shadow-xl">
+        <!--Zona de nombre de la orden-->
+        <div
+          class="grid content-center p-3 bg-[#EEE1D5] h-32 rounded-[12px] border-4 border-red-900"
+        >
+          <h2 class="mb-3 uppercase text-xl font-bold">Nombre de la orden</h2>
+          <div class="input-de-nombre">
+            <label for="nombre-de-la-orden" class="input-label bg-[#EEE1D5]"
+              >Nombre para la orden</label
+            >
+            <input
+              id="nombre-de-la-orden"
+              class="input-para-el-nombre border-2 bg-[#EEE1D5] w-[600px]"
+              placeholder="Escribir acá"
+            />
+          </div>
+        </div>
+        <div
+          class="grid content-evenly p-3 bg-[#EEE1D5] h-64 rounded-[12px] border-4 border-red-900"
+        >
+          <h2 class="mb-3 uppercase text-xl font-bold">Método de pago</h2>
+          <!--Método de pago-->
+          <div class="input-de-pago mb-3">
+            <label
+              for="numero-de-la-tarjeta"
+              class="input-label-tarjeta bg-[#EEE1D5]"
+              >Número de la tarjeta</label
+            >
+            <input
+              id="numero-de-la-tarjeta"
+              class="input-numero-de-tarjeta border-2 bg-[#EEE1D5] w-[600px]"
+              placeholder="Escribir acá"
+            />
+          </div>
+          <div class="input-de-CCV">
+            <label for="numero-de-CCV" class="input-label-CCV bg-[#EEE1D5]"
+              >CCV</label
+            >
+            <input
+              id="numero-de-CCV"
+              class="input-para-el-CCV border-2 bg-[#EEE1D5]"
+              placeholder="Escribir acá"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bg-neutral-300 col-span-2">
+        <div class="flex justify-evenly pb-3">
+          <div class="flex flex-col">
+            <div>Subtotal:</div>
+            <div>Tax:</div>
+            <div>Total:</div>
+          </div>
+          <div class="flex flex-col">
+            <div>100 C$</div>
+            <div>20 C$</div>
+            <div>120 C$</div>
+          </div>
+        </div>
+        <button
+          class="bg-[#EEE1D5] border border-[#EEE1D5] hover:border-red-900 shadow-xl bg-[#EEE1D5] h-8 col-span-2 rounded-[12px] w-full font-bold"
+          type="button"
+        >
+          Presione acá para ordenar
+        </button>
+      </section>
     </div>
-</body>
+  </body>
 </html>
